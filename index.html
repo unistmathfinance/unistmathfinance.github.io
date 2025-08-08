@@ -14,21 +14,27 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <i class="fas fa-calculator"></i>
-                    <span>FinMath Lab</span>
+                    <i class="fas fa-arrow-trend-up"></i>
+                    <span>UNIST FinMath Lab</span>
                 </div>
                 <ul class="nav-menu" id="nav-menu">
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tools" class="nav-link">Tools</a>
+                        <a href="#news" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#members" class="nav-link">Members</a>
                     </li>
                     <li class="nav-item">
                         <a href="#research" class="nav-link">Research</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resources" class="nav-link">Resources</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -43,99 +49,344 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Financial Mathematics Laboratory</h1>
-                <p class="hero-subtitle">Advanced computational tools and research in quantitative finance, risk management, and mathematical modeling</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('tools')">
-                        <i class="fas fa-rocket"></i>
-                        Get Started
-                    </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('research')">
-                        <i class="fas fa-book"></i>
-                        View Research
-                    </button>
+<!-- Hero Section -->
+<section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/Group_photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">UNIST Financial Mathematics Laboratory</h1>
+            <p class="hero-subtitle">Theoretical Financial Mathematics Modelling and Applications</p>
+    </div>
+</section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Latest News & Updates</h2>
+            <p class="section-subtitle">Stay updated with the latest developments in financial mathematics and laboratory activities</p>
+            
+            <div class="news-container">
+                <div class="featured-news">
+                    <div class="news-card featured">
+                        <div class="news-image">
+                            <img src="" alt="Featured News" id="featured-news-img">
+                            <div class="news-image-placeholder">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="news-category">Featured</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="fas fa-calendar"></i>
+                                    August 5, 2025
+                                </span>
+                                <span class="news-author">
+                                    <i class="fas fa-user"></i>
+                                    Dr. Sarah Johnson
+                                </span>
+                            </div>
+                            <h3>Revolutionary AI Model Predicts Market Volatility with 94% Accuracy</h3>
+                            <p>Our laboratory has developed a groundbreaking machine learning model that combines deep reinforcement learning with stochastic volatility models to predict market volatility patterns. The model has been tested on 15 years of market data and shows unprecedented accuracy in forecasting volatility clusters and market regime changes.</p>
+                            <div class="news-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Volatility</span>
+                                <span class="tag">Prediction</span>
+                            </div>
+                            <a href="#" class="news-read-more">
+                                <span>Read Full Article</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Portfolio Optimization</span>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-coins"></i>
-                    <span>Risk Analytics</span>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-brain"></i>
-                    <span>ML Models</span>
+
+                <div class="recent-news">
+                    <div class="news-list">
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <div class="news-image-placeholder small">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                            </div>
+                            <div class="news-item-content">
+                                <div class="news-meta">
+                                    <span class="news-date">August 1, 2025</span>
+                                    <span class="news-category-small award">Award</span>
+                                </div>
+                                <h4>Dr. Chen Receives Best Paper Award at QuantFinance 2025</h4>
+                                <p>Dr. Michael Chen's research on high-frequency trading algorithms has been recognized with the prestigious Best Paper Award at the International Conference on Quantitative Finance.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <div class="news-image-placeholder small">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                            <div class="news-item-content">
+                                <div class="news-meta">
+                                    <span class="news-date">July 28, 2025</span>
+                                    <span class="news-category-small collaboration">Partnership</span>
+                                </div>
+                                <h4>New Partnership with Goldman Sachs for Risk Management Research</h4>
+                                <p>We are excited to announce a strategic research partnership with Goldman Sachs to develop next-generation risk management tools for institutional investors.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <div class="news-image-placeholder small">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                            </div>
+                            <div class="news-item-content">
+                                <div class="news-meta">
+                                    <span class="news-date">July 25, 2025</span>
+                                    <span class="news-category-small product">Product Launch</span>
+                                </div>
+                                <h4>New Portfolio Optimization Tool Now Available</h4>
+                                <p>Our latest portfolio optimization tool featuring real-time ESG integration and climate risk assessment is now available for institutional clients.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <div class="news-image-placeholder small">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="news-item-content">
+                                <div class="news-meta">
+                                    <span class="news-date">July 20, 2025</span>
+                                    <span class="news-category-small conference">Conference</span>
+                                </div>
+                                <h4>Financial Mathematics Summer Workshop 2025</h4>
+                                <p>Join us for our annual summer workshop featuring leading experts in quantitative finance, machine learning applications, and regulatory compliance.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <div class="news-image-placeholder small">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="news-item-content">
+                                <div class="news-meta">
+                                    <span class="news-date">July 15, 2025</span>
+                                    <span class="news-category-small research">Research</span>
+                                </div>
+                                <h4>Breakthrough in Cryptocurrency Risk Modeling</h4>
+                                <p>Our team has published groundbreaking research on cryptocurrency risk assessment using advanced Monte Carlo techniques and blockchain analytics.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-sidebar">
+                        <div class="upcoming-events">
+                            <h4>Upcoming Events</h4>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">15</span>
+                                    <span class="date-month">Aug</span>
+                                </div>
+                                <div class="event-info">
+                                    <h5>Quantitative Risk Workshop</h5>
+                                    <p>Advanced techniques in credit risk modeling</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">22</span>
+                                    <span class="date-month">Aug</span>
+                                </div>
+                                <div class="event-info">
+                                    <h5>AI in Finance Seminar</h5>
+                                    <p>Machine learning applications in trading</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="date-day">30</span>
+                                    <span class="date-month">Aug</span>
+                                </div>
+                                <div class="event-info">
+                                    <h5>Industry Roundtable</h5>
+                                    <p>Future of financial technology</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-stats">
+                            <h4>Lab Statistics</h4>
+                            <div class="stat-grid">
+                                <div class="mini-stat">
+                                    <div class="stat-number">25</div>
+                                    <div class="stat-label">Active Projects</div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="stat-number">150</div>
+                                    <div class="stat-label">Publications</div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="stat-number">12</div>
+                                    <div class="stat-label">Industry Partners</div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Citations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tools Section -->
-    <section id="tools" class="tools">
+    <!-- Members Section -->
+    <section id="members" class="members">
         <div class="container">
-            <h2 class="section-title">Financial Tools & Calculators</h2>
-            <p class="section-subtitle">Comprehensive suite of financial mathematics tools</p>
+            <h2 class="section-title">Our Team Members</h2>
+            <p class="section-subtitle">Meet our team of financial mathematics laboratory.</p>
             
-            <div class="tools-grid">
-                <div class="tool-card" data-tool="portfolio">
-                    <div class="tool-icon">
-                        <i class="fas fa-chart-pie"></i>
+            <div class="members-grid">
+                <div class="member-card" data-member="director">
+                    <div class="member-image">
+                        <img src="" alt="Jin Hyuk Choi" id="PI-img">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
-                    <h3>Portfolio Optimization</h3>
-                    <p>Modern portfolio theory implementation with efficient frontier calculations and risk-return optimization.</p>
-                    <button class="tool-btn">Launch Tool</button>
+                    <div class="member-info">
+                        <h3>Jin Hyuk Choi</h3>
+                        <p class="member-title">Principal Investigator</p>
+                        <div class="member-description">
+                            <p>Leading expert in quantitative finance with over 15 years of experience in mathematical modeling, risk management, and financial derivatives. PhD in Financial Mathematics from MIT with extensive research in stochastic calculus and portfolio optimization.</p>
+                            <ul class="member-expertise">
+                                <li>Quantitative Risk Management</li>
+                                <li>Derivatives Pricing Models</li>
+                                <li>Stochastic Calculus</li>
+                                <li>Portfolio Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="member-links">
+                            <a href="#" class="member-homepage" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Personal Homepage
+                            </a>
+                            <a href="#" class="member-email">
+                                <i class="fas fa-envelope"></i>
+                                s.johnson@finmathlab.edu
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tool-card" data-tool="options">
-                    <div class="tool-icon">
-                        <i class="fas fa-coins"></i>
+                <div class="member-card" data-member="researcher1">
+                    <div class="member-image">
+                        <img src="images/Seongjin_Kim.jpg" alt="Seongjin_Kim" id="researcher1-img">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
-                    <h3>Options Pricing</h3>
-                    <p>Black-Scholes model, binomial trees, and Monte Carlo simulations for derivatives pricing.</p>
-                    <button class="tool-btn">Launch Tool</button>
+                    <div class="member-info">
+                        <h3>Seongjin Kim</h3>
+                        <p class="member-title">PhD Candidate</p>
+                        <div class="member-description">
+                            <p>Computational finance specialist focusing on machine learning applications in algorithmic trading.</p>
+                            <ul class="member-expertise">
+                                <li>Machine Learning in Finance</li>
+                                <li>Algorithmic Trading</li>
+                                <li>Market Microstructure</li>
+                                <li>Time Series Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="member-links">
+                            <a href="#" class="member-homepage" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Personal Homepage
+                            </a>
+                            <a href="#" class="member-email">
+                                <i class="fas fa-envelope"></i>
+                                m.chen@finmathlab.edu
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tool-card" data-tool="risk">
-                    <div class="tool-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="member-card" data-member="researcher2">
+                    <div class="member-image">
+                        <img src="" alt="Jungyong Choi" id="researcher2-img">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
-                    <h3>Risk Management</h3>
-                    <p>VaR calculations, stress testing, and comprehensive risk analytics for financial portfolios.</p>
-                    <button class="tool-btn">Launch Tool</button>
+                    <div class="member-info">
+                        <h3>Jungyong Choi</h3>
+                        <p class="member-title">PhD Candidate</p>
+                        <div class="member-description">
+                            <p>Expert in credit risk modeling and regulatory compliance with extensive experience in Basel III implementation. Specializes in Monte Carlo simulations for risk assessment and stress testing methodologies for financial institutions.</p>
+                            <ul class="member-expertise">
+                                <li>Credit Risk Modeling</li>
+                                <li>Regulatory Compliance</li>
+                                <li>Monte Carlo Methods</li>
+                                <li>Stress Testing</li>
+                            </ul>
+                        </div>
+                        <div class="member-links">
+                            <a href="#" class="member-homepage" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Personal Homepage
+                            </a>
+                            <a href="#" class="member-email">
+                                <i class="fas fa-envelope"></i>
+                                e.rodriguez@finmathlab.edu
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tool-card" data-tool="bonds">
-                    <div class="tool-icon">
-                        <i class="fas fa-certificate"></i>
+                <div class="member-card" data-member="researcher3">
+                    <div class="member-image">
+                        <img src="images/Tselmuun_Munkhjin.jpg" alt="Tselmuun Munkhjin" id="researcher3-img">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="image-upload">
+                            <input type="file" id="researcher3-upload" accept="image/*" style="display: none;">
+                        </div>
                     </div>
-                    <h3>Fixed Income Analytics</h3>
-                    <p>Bond pricing, yield curve analysis, duration and convexity calculations.</p>
-                    <button class="tool-btn">Launch Tool</button>
-                </div>
-
-                <div class="tool-card" data-tool="monte">
-                    <div class="tool-icon">
-                        <i class="fas fa-dice"></i>
+                    <div class="member-info">
+                        <h3>Tselmuun Munkhjin</h3>
+                        <p class="member-title">PhD Candidate</p>
+                        <div class="member-description">
+                            <p>Renowned expert in fixed income securities and yield curve modeling. Former head of bond trading at JP Morgan with deep expertise in interest rate derivatives and credit instruments. Published author of numerous papers on term structure models.</p>
+                            <ul class="member-expertise">
+                                <li>Fixed Income Securities</li>
+                                <li>Yield Curve Modeling</li>
+                                <li>Interest Rate Derivatives</li>
+                                <li>Term Structure Models</li>
+                            </ul>
+                        </div>
+                        <div class="member-links">
+                            <a href="https://tselmuun0624.github.io/" class="member-homepage" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Personal Homepage
+                            </a>
+                            <a href="#" class="member-email">
+                                <i class="fas fa-envelope"></i>
+                                tmunkhjin@unist.ac.kr
+                            </a>
+                        </div>
                     </div>
-                    <h3>Monte Carlo Simulation</h3>
-                    <p>Advanced stochastic modeling for financial forecasting and scenario analysis.</p>
-                    <button class="tool-btn">Launch Tool</button>
-                </div>
-
-                <div class="tool-card" data-tool="ml">
-                    <div class="tool-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>AI-powered financial modeling, algorithmic trading strategies, and predictive analytics.</p>
-                    <button class="tool-btn">Launch Tool</button>
                 </div>
             </div>
         </div>
@@ -239,6 +490,331 @@
         </div>
     </section>
 
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Resources & Publications</h2>
+            <p class="section-subtitle">Essential books, research papers, and reviews in financial mathematics</p>
+            
+            <div class="resources-tabs">
+                <button class="tab-btn active" data-tab="books">
+                    <i class="fas fa-book"></i>
+                    Books
+                </button>
+                <button class="tab-btn" data-tab="papers">
+                    <i class="fas fa-file-alt"></i>
+                    Paper Reviews
+                </button>
+            </div>
+
+            <!-- Books Tab Content -->
+            <div class="tab-content active" id="books-tab">
+                <div class="books-grid">
+                    <div class="resource-card book-card">
+                        <div class="book-cover">
+                            <div class="cover-placeholder">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>Options, Futures, and Other Derivatives</h3>
+                            <p class="book-author">by John C. Hull</p>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0/5</span>
+                            </div>
+                            <p class="book-description">The definitive guide to derivatives pricing and risk management. Comprehensive coverage of options, futures, swaps, and credit derivatives with practical examples and real-world applications.</p>
+                            <div class="book-tags">
+                                <span class="tag">Derivatives</span>
+                                <span class="tag">Risk Management</span>
+                                <span class="tag">Options</span>
+                            </div>
+                            <div class="book-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Details
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-download"></i>
+                                    PDF Access
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card book-card">
+                        <div class="book-cover">
+                            <div class="cover-placeholder">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>Quantitative Portfolio Theory</h3>
+                            <p class="book-author">by Michael E. Dempster</p>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>4.5/5</span>
+                            </div>
+                            <p class="book-description">Advanced mathematical approaches to portfolio optimization, including modern portfolio theory, factor models, and dynamic asset allocation strategies for institutional investors.</p>
+                            <div class="book-tags">
+                                <span class="tag">Portfolio Theory</span>
+                                <span class="tag">Optimization</span>
+                                <span class="tag">Asset Allocation</span>
+                            </div>
+                            <div class="book-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Details
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-download"></i>
+                                    PDF Access
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card book-card">
+                        <div class="book-cover">
+                            <div class="cover-placeholder">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>Stochastic Calculus for Finance</h3>
+                            <p class="book-author">by Steven E. Shreve</p>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8/5</span>
+                            </div>
+                            <p class="book-description">Two-volume masterpiece covering binomial asset pricing models, continuous-time models, and applications to derivatives pricing using rigorous mathematical foundations.</p>
+                            <div class="book-tags">
+                                <span class="tag">Stochastic Calculus</span>
+                                <span class="tag">Mathematical Finance</span>
+                                <span class="tag">Derivatives</span>
+                            </div>
+                            <div class="book-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Details
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-download"></i>
+                                    PDF Access
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card book-card">
+                        <div class="book-cover">
+                            <div class="cover-placeholder">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3>Risk Management and Financial Institutions</h3>
+                            <p class="book-author">by John C. Hull</p>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>4.3/5</span>
+                            </div>
+                            <p class="book-description">Comprehensive guide to financial risk management covering market risk, credit risk, operational risk, and regulatory frameworks including Basel III requirements.</p>
+                            <div class="book-tags">
+                                <span class="tag">Risk Management</span>
+                                <span class="tag">Basel III</span>
+                                <span class="tag">Financial Institutions</span>
+                            </div>
+                            <div class="book-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Details
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-download"></i>
+                                    PDF Access
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papers Tab Content -->
+            <div class="tab-content" id="papers-tab">
+                <div class="papers-grid">
+                    <div class="resource-card paper-card">
+                        <div class="paper-header">
+                            <div class="paper-type">Research Paper</div>
+                            <div class="paper-date">2024</div>
+                        </div>
+                        <div class="paper-info">
+                            <h3>Deep Learning for Portfolio Optimization: A Comparative Study</h3>
+                            <p class="paper-authors">Johnson, S., Chen, M., Rodriguez, E.</p>
+                            <p class="paper-journal">Journal of Financial Economics, Vol. 142, pp. 45-67</p>
+                            <div class="paper-rating">
+                                <div class="impact-score">Impact Score: 8.5</div>
+                                <div class="citations">Citations: 23</div>
+                            </div>
+                            <p class="paper-abstract">This study compares traditional mean-variance optimization with deep reinforcement learning approaches for portfolio management. Results show significant improvements in risk-adjusted returns using neural networks, particularly during volatile market conditions.</p>
+                            <div class="paper-tags">
+                                <span class="tag">Deep Learning</span>
+                                <span class="tag">Portfolio Optimization</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Read Paper
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-quote-left"></i>
+                                    Cite
+                                </a>
+                                <a href="#" class="btn-resource tertiary">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Data & Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card paper-card">
+                        <div class="paper-header">
+                            <div class="paper-type">Review Paper</div>
+                            <div class="paper-date">2023</div>
+                        </div>
+                        <div class="paper-info">
+                            <h3>Monte Carlo Methods in Credit Risk: A Comprehensive Review</h3>
+                            <p class="paper-authors">Rodriguez, E., Thompson, J.</p>
+                            <p class="paper-journal">Risk Management Review, Vol. 28, pp. 112-145</p>
+                            <div class="paper-rating">
+                                <div class="impact-score">Impact Score: 7.2</div>
+                                <div class="citations">Citations: 156</div>
+                            </div>
+                            <p class="paper-abstract">Comprehensive review of Monte Carlo simulation techniques for credit risk assessment, including importance sampling, variance reduction methods, and computational efficiency improvements for large portfolios.</p>
+                            <div class="paper-tags">
+                                <span class="tag">Monte Carlo</span>
+                                <span class="tag">Credit Risk</span>
+                                <span class="tag">Simulation</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Read Paper
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-quote-left"></i>
+                                    Cite
+                                </a>
+                                <a href="#" class="btn-resource tertiary">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Supplementary
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card paper-card">
+                        <div class="paper-header">
+                            <div class="paper-type">Research Paper</div>
+                            <div class="paper-date">2023</div>
+                        </div>
+                        <div class="paper-info">
+                            <h3>High-Frequency Trading and Market Microstructure Dynamics</h3>
+                            <p class="paper-authors">Chen, M., Johnson, S.</p>
+                            <p class="paper-journal">Journal of Financial Markets, Vol. 58, pp. 78-95</p>
+                            <div class="paper-rating">
+                                <div class="impact-score">Impact Score: 9.1</div>
+                                <div class="citations">Citations: 89</div>
+                            </div>
+                            <p class="paper-abstract">Analysis of high-frequency trading impact on market liquidity and price discovery. The study reveals complex interactions between algorithmic trading strategies and market stability during extreme events.</p>
+                            <div class="paper-tags">
+                                <span class="tag">High-Frequency Trading</span>
+                                <span class="tag">Market Microstructure</span>
+                                <span class="tag">Liquidity</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Read Paper
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-quote-left"></i>
+                                    Cite
+                                </a>
+                                <a href="#" class="btn-resource tertiary">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Analysis Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card paper-card">
+                        <div class="paper-header">
+                            <div class="paper-type">Research Paper</div>
+                            <div class="paper-date">2024</div>
+                        </div>
+                        <div class="paper-info">
+                            <h3>Term Structure Models for Interest Rate Derivatives</h3>
+                            <p class="paper-authors">Thompson, J., Rodriguez, E.</p>
+                            <p class="paper-journal">Mathematical Finance, Vol. 34, pp. 201-228</p>
+                            <div class="paper-rating">
+                                <div class="impact-score">Impact Score: 8.8</div>
+                                <div class="citations">Citations: 45</div>
+                            </div>
+                            <p class="paper-abstract">Novel approach to term structure modeling incorporating stochastic volatility and jump processes. The model demonstrates superior performance in pricing interest rate derivatives compared to traditional approaches.</p>
+                            <div class="paper-tags">
+                                <span class="tag">Term Structure</span>
+                                <span class="tag">Interest Rate Models</span>
+                                <span class="tag">Stochastic Volatility</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="#" class="btn-resource primary">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Read Paper
+                                </a>
+                                <a href="#" class="btn-resource secondary">
+                                    <i class="fas fa-quote-left"></i>
+                                    Cite
+                                </a>
+                                <a href="#" class="btn-resource tertiary">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Model Implementation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -267,32 +843,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="subject" name="subject" required>
-                                <option value="">Select Subject</option>
-                                <option value="research">Research Collaboration</option>
-                                <option value="tools">Tool Access</option>
-                                <option value="general">General Inquiry</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -312,9 +862,11 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
                         <li><a href="#members">Members</a></li>
                         <li><a href="#research">Research</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#resources">Resources</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
