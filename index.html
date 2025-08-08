@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Mathematics Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-calculator"></i>
+                    <span>FinMath Lab</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tools" class="nav-link">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Financial Mathematics Laboratory</h1>
+                <p class="hero-subtitle">Advanced computational tools and research in quantitative finance, risk management, and mathematical modeling</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('tools')">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('research')">
+                        <i class="fas fa-book"></i>
+                        View Research
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Portfolio Optimization</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-coins"></i>
+                    <span>Risk Analytics</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-brain"></i>
+                    <span>ML Models</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Financial Tools & Calculators</h2>
+            <p class="section-subtitle">Comprehensive suite of financial mathematics tools</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card" data-tool="portfolio">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Portfolio Optimization</h3>
+                    <p>Modern portfolio theory implementation with efficient frontier calculations and risk-return optimization.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+
+                <div class="tool-card" data-tool="options">
+                    <div class="tool-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Options Pricing</h3>
+                    <p>Black-Scholes model, binomial trees, and Monte Carlo simulations for derivatives pricing.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+
+                <div class="tool-card" data-tool="risk">
+                    <div class="tool-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Management</h3>
+                    <p>VaR calculations, stress testing, and comprehensive risk analytics for financial portfolios.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+
+                <div class="tool-card" data-tool="bonds">
+                    <div class="tool-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Fixed Income Analytics</h3>
+                    <p>Bond pricing, yield curve analysis, duration and convexity calculations.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+
+                <div class="tool-card" data-tool="monte">
+                    <div class="tool-icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <h3>Monte Carlo Simulation</h3>
+                    <p>Advanced stochastic modeling for financial forecasting and scenario analysis.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+
+                <div class="tool-card" data-tool="ml">
+                    <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>AI-powered financial modeling, algorithmic trading strategies, and predictive analytics.</p>
+                    <button class="tool-btn">Launch Tool</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="research-content">
+                <div class="research-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Research Papers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Active Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                </div>
+                
+                <div class="research-areas">
+                    <h3>Research Focus Areas</h3>
+                    <div class="research-grid">
+                        <div class="research-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Quantitative Finance</h4>
+                            <p>Mathematical modeling of financial markets and instruments</p>
+                        </div>
+                        <div class="research-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Algorithmic Trading</h4>
+                            <p>High-frequency trading strategies and market microstructure</p>
+                        </div>
+                        <div class="research-item">
+                            <i class="fas fa-brain"></i>
+                            <h4>Financial AI</h4>
+                            <p>Machine learning applications in finance and fintech</p>
+                        </div>
+                        <div class="research-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Risk Analytics</h4>
+                            <p>Advanced risk measurement and management techniques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Our Laboratory</h2>
+                    <p>The Financial Mathematics Laboratory is a cutting-edge research facility dedicated to advancing the field of quantitative finance through innovative mathematical modeling, computational methods, and interdisciplinary collaboration.</p>
+                    
+                    <p>Our team of experts combines deep mathematical knowledge with practical financial experience to develop tools and methodologies that address real-world challenges in finance, risk management, and investment strategy.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Expert Team</h4>
+                                <p>PhD-level researchers and industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Global Impact</h4>
+                                <p>Collaborations with leading financial institutions worldwide</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Innovation</h4>
+                                <p>Pioneering research in computational finance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="stats-circle">
+                        <div class="circle-item">
+                            <div class="circle-progress" data-percentage="95">
+                                <span>95%</span>
+                            </div>
+                            <p>Accuracy Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Financial Mathematics Laboratory<br>University Research Center<br>Building A, Suite 301</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@finmathlab.edu<br>research@finmathlab.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="tools">Tool Access</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-calculator"></i>
+                        <span>FinMath Lab</span>
+                    </div>
+                    <p>Advancing financial mathematics through innovation and research excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Access</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Financial Mathematics Laboratory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
